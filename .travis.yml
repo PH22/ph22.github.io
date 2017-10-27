@@ -17,6 +17,9 @@ before_install:
 install:
 - yarn
 script:
+- which hexo
+- hexo help clean
+- ls -l
 - hexo clean
 - hexo generate
 after_success:
