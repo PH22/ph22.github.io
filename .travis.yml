@@ -22,7 +22,7 @@ script:
 after_success:
 - cd ./public
 - git init
-- git add --all
+- git add --all .
 - git commit -m "Travis CI Auto Builder"
 - git push --quiet --force https://$REPO_TOKEN@github.com/ph22/ph22.github.io.git
   master
