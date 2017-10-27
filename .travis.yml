@@ -18,10 +18,10 @@ install:
 - yarn
 script:
 - which hexo
-- hexo help clean
-- ls -l
+- hexo clean help
 - hexo clean
 - hexo generate
+- ls -l
 after_success:
 - cd ./public
 - git init
