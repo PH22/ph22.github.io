@@ -17,11 +17,8 @@ before_install:
 install:
 - yarn
 script:
-- hexo init
-- hexo clean help
 - hexo clean
 - hexo generate
-- ls -l
 after_success:
 - cd ./public
 - git init
