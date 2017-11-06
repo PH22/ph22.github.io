@@ -68,7 +68,4 @@ theme: maupassant
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: git@github.com:ph22/ph22.github.io.git
-  branch: master
-  message: '站点更新:{{now("YYYY-MM-DD HH/mm/ss")}}'
+  type:
