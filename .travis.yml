@@ -4,7 +4,10 @@ node_js:
 branches:
     only:
     - blog
-
+cache:
+    apt: true
+    directories:
+    - node_modules
 before_install:
 - git config --global user.name "ph22"
 - git config --global user.email "huangpenghua@gmail.com"
@@ -12,6 +15,7 @@ before_install:
 install:
     - npm install hexo-renderer-jade --save
     - npm install hexo-renderer-sass --save
+    - npm install hexo --save
 script:
 - hexo clean
 - hexo generate
